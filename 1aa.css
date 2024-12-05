@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu Styles */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #575757;
+    color: #ffcc00;
+}
+
+/* Main Styles */
+main {
+    padding: 80px 20px 20px;
+    text-align: center;
+    background-color: #ffffff; /* Ensuring the form section stands out */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-image: url('https://images.pexels.com/photos/5288701/pexels-photo-5288701.jpeg'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Form Section Enhancements */
+.inquire-form {
+    max-width: 418px;
+    margin: 20px auto;
+    background: #f4f4f4; /* Light cream background to complement the earthy tones */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for form */
+.inquire-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Heading */
+.inquire-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d4a39; /* Dark olive green for contrast with the image */
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Form Label */
+.inquire-form label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: 600;
+    color: #4a4a4a; /* Soft gray to blend well with the background */
+}
+
+/* Input & Textarea Styles */
+.inquire-form input,
+.inquire-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    background-color: #fff; /* Keeping inputs white for contrast */
+}
+
+/* Focus effect for inputs */
+.inquire-form input:focus,
+.inquire-form textarea:focus {
+    border-color: #00bcd4; /* Soft teal */
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.4);
+    outline: none;
+}
+
+/* Submit Button Styling */
+.submit-button {
+    background-color: #4caf50; /* Green color to match the natural feel of the image */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Button Hover Effect */
+.submit-button:hover {
+    background-color: #45a049; /* Slightly darker green */
+    transform: translateY(-2px);
+}
+
+/* Button Focus Effect */
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5); /* Yellow glow for focus */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}

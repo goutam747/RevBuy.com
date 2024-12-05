@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Dark Blue Gray */
+    color: #fff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Full-Screen Main Section */
+main {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-color: #ffffff; /* Clean white background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-image: url('https://images.pexels.com/photos/5288701/pexels-photo-5288701.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search Panel Section */
+.search-panel {
+    width: 90%; /* More flexible, allowing more space on mobile */
+    max-width: 600px; /* Ensure it's not too wide on larger screens */
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.85); /* Soft translucent white */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for search panel */
+.search-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Panel Heading */
+.search-panel h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2d4a39; /* Deep olive green to complement nature tones */
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Search Panel Label */
+.search-panel label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+    color: #34495e; /* Dark Blue Gray for good contrast */
+    font-size: 16px;
+}
+
+/* Input & Textarea Styles */
+.search-panel input,
+.search-panel textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f1f1f1; /* Soft gray for inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect for inputs */
+.search-panel input:focus,
+.search-panel textarea:focus {
+    border-color: #16a085; /* Soft teal for focus */
+    box-shadow: 0 0 5px rgba(22, 160, 133, 0.4);
+    outline: none;
+}
+
+/* Submit Button Styling */
+.search-button {
+    background-color: #4caf50; /* Vibrant green to complement nature */
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%; /* Full width button for symmetry */
+}
+
+/* Button Hover Effect */
+.search-button:hover {
+    background-color: #45a049; /* Slightly darker green for hover effect */
+    transform: translateY(-2px);
+}
+
+/* Button Focus Effect */
+.search-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5); /* Yellow glow for focus */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50; /* Matching header color */
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #444;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background : url(https://www.supercars.net/blog/wp-content/uploads/2020/09/wallpaperflare.com_wallpaper-1-1.jpg);
+
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    flex: 1;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #ff7e5f;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.search-bar button:hover {
+    transform: scale(1.1);
+    background-color: #ff5733;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+main {
+    background: linear-gradient(135deg, #d4d4d4, #e6e6e6, #c1c1c1);
+    border-radius: 15px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Adding subtle metallic texture */
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent 30%, rgba(0, 0, 0, 0.1) 60%, transparent);
+    mix-blend-mode: overlay;
+    pointer-events: none;
+}
+
+
+.about-us {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+
+}
+
+.about-us h1 {
+    color: #ff7e5f;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us h2 {
+    color: #ff7e5f;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.about-us p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.about-us ul {
+    padding-left: 40px;
+    list-style: circle;
+}
+
+.about-us ul li {
+    margin: 10px 0;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ff7e5f;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .team-member {
+        flex: 1 1 100%;
+    }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
